@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1Xamarin.ProjetLogin"
+             Title="Connexion">
+
+    <ContentPage.Content >
+
+        <StackLayout  BackgroundColor="AliceBlue" >
+            <Label Text="Connexion" TextColor="DarkSalmon" TranslationX="100" TranslationY="20"  FontSize="Title"/>
+
+            <StackLayout  Orientation="Horizontal" TranslationY="30"  Padding="15">
+
+                <!--<Label Text="Nom d'utilisateur"  />-->
+                <Entry x:Name="txtName" HorizontalOptions="FillAndExpand" Placeholder="Nom d'utilisateur"   ></Entry>
+            </StackLayout>
+            
+            <StackLayout  Orientation="Horizontal" Padding="15">
+                <!--<Label Text="Mot de passe"/>-->
+                <Entry x:Name="txtMdp" IsPassword="True" HorizontalOptions="FillAndExpand" Placeholder="Mot de passe"  ></Entry>
+            </StackLayout>
+
+            <Button x:Name="Connect"  Text="SE CONNECTER" Clicked="Connect_Clicked"
+                    TextColor="White" BackgroundColor="Aquamarine" BorderWidth="1" CornerRadius="50" BorderColor="Aquamarine"></Button>
+
+
+            <StackLayout  Orientation="Vertical"   Padding="100">
+                <Label Text="Mot de passe oublié ?" x:Name="mdpUpdate" TextDecorations="Underline" TextColor="Gray" />
+                <Label Text="S'inscrire" x:Name="inscrire" TextDecorations="Underline" TextColor="Gray" />
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

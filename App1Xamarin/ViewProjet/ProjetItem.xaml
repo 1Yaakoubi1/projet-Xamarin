@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1Xamarin.ProjetItem">
+    <ContentPage.Content>
+
+        <StackLayout  Orientation="Vertical" VerticalOptions="CenterAndExpand" >
+
+
+            <StackLayout  Orientation="Vertical">
+                <Image x:Name="Mag" HeightRequest="100"  WidthRequest="100"></Image>
+                <Button x:Name="Magasin" Text="MAGASIN" Clicked="Magasin_Clicked" BackgroundColor="CadetBlue"  ></Button>
+               
+            </StackLayout>
+
+            <StackLayout  Orientation="Vertical" >
+                <Image x:Name="FoireV" HeightRequest="100"  WidthRequest="100" ></Image>
+                <Button x:Name="Foire" Text="FOIRE" Clicked="Foire_Clicked" BackgroundColor="Orchid"></Button>
+            
+            </StackLayout>
+            <StackLayout   Orientation="Vertical" >
+                <Image x:Name="LogoIset" HeightRequest="100"  WidthRequest="100"></Image>
+                    <Button  x:Name="Iset" Text="ISET" Clicked="Iset_Clicked" BackgroundColor="DeepSkyBlue"></Button>
+                
+            </StackLayout>
+
+        </StackLayout>
+
+
+            </ContentPage.Content>
+</ContentPage>

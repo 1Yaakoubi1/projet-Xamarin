@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1Xamarin.FoireCarousel">
+    <CarouselPage.Children>
+        <ContentPage Title="Voiture1">
+            <Image x:Name="Voiture1"></Image>
+        </ContentPage>
+        <ContentPage Title="Voiture2">
+            <Image x:Name="Voiture2"></Image>
+        </ContentPage>
+        <ContentPage Title="Voiture3">
+            <Image x:Name="Voiture3"></Image>
+        </ContentPage>
+        <ContentPage Title="Voiture4">
+            <Image x:Name="Voiture4"></Image>
+        </ContentPage>
+    </CarouselPage.Children>
+</CarouselPage>

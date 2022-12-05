@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1Xamarin.login"
+             Padding="15">
+    <ContentPage.Content >
+        <StackLayout Orientation="Vertical" VerticalOptions="Center" Background="pink">
+            <StackLayout  Orientation="Horizontal"
+                          Background="yellow"
+                          Padding="15">
+            <Label Text="login"  />
+                
+            <Entry HorizontalOptions="FillAndExpand" x:Name="txtName"></Entry>
+            </StackLayout>
+
+            <StackLayout  Orientation="Horizontal"  Background="yellow"
+                           Padding="10">
+                <Label Text="Mot de passe"/>
+            <Entry x:Name="txtMdp" IsPassword="True" HorizontalOptions="FillAndExpand" > </Entry>
+
+                </StackLayout>
+            
+            <Button Text="afficher" Clicked="afficher">  </Button>
+            <Label x:Name="txtLOG" ></Label>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,3 @@
+D:\xamarin\App1Xamarin\App1Xamarin.Android\obj\Release\110\MonoAndroid,Version=v11.0.AssemblyAttributes.cs
+D:\xamarin\App1Xamarin\App1Xamarin.Android\obj\Release\110\build.props
+D:\xamarin\App1Xamarin\App1Xamarin.Android\obj\Release\110\adb.props

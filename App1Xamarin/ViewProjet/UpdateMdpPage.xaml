@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1Xamarin.ViewProjet.UpdateMdpPage">
+    <ContentPage.Content>
+        <StackLayout  BackgroundColor="AliceBlue"  Padding="15" Orientation="Vertical" >
+            <Label Text="Modifier votre Mot de passe" TextColor="DarkSalmon"  FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+
+            <StackLayout  Orientation="Horizontal" >
+
+                <!--<Label Text="Nom d'utilisateur"  />-->
+                <Entry x:Name="txtName" HorizontalOptions="FillAndExpand" Placeholder="Nom d'utilisateur" Text="{Binding nom}"  ></Entry>
+            </StackLayout>
+
+            <StackLayout  Orientation="Horizontal" >
+                <!--<Label Text="Mot de passe"/>-->
+                <Entry x:Name="txtNouveauMdp" IsPassword="True" HorizontalOptions="FillAndExpand" Placeholder="Mot de passe"  ></Entry>
+            </StackLayout>
+
+            <StackLayout  Orientation="Horizontal" >
+                <Entry x:Name="txtConfirmNouveauMdp" IsPassword="True" HorizontalOptions="FillAndExpand" Placeholder=" Confirmer le mot de passe"  ></Entry>
+            </StackLayout>
+
+            <Button x:Name="UpdateMdp"  Text="Modifier le Mot de passe" Clicked="UpdateMdp_Clicked"
+                    TextColor="White" BackgroundColor="Aquamarine" BorderWidth="1" CornerRadius="50" BorderColor="Aquamarine" Font="Bold"></Button>
+
+
+            <StackLayout  Orientation="Vertical" >
+                <Label Text="Pas encore de compte?" x:Name="LabConnect" TextDecorations="Underline" TextColor="Gray"   />
+            </StackLayout>
+
+       
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

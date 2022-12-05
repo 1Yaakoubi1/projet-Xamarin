@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1Xamarin.Iset">
+  <!--Pages can be added as references or inline-->
+    <TabbedPage.Children >
+
+        <ContentPage Title="TI" BackgroundColor="LightBlue" >
+            <StackLayout TranslationY="50">
+                <Label Text="Département Technologies de l'informatique"   TextColor="AliceBlue" FontSize="18"></Label>
+                <Label Text="Présentation" FontSize="15" HorizontalOptions="Center" VerticalOptions="Center" TranslationY="80" FontAttributes="Bold" />
+                <Label Text=" Le Département des Technologies de l'informatique a démarré en février 2003.Il regroupe des enseignants et des professionnels (vacataires)" 
+                        FontSize="12" TranslationY="100" ></Label>
+            </StackLayout>
+           
+            
+        </ContentPage>
+        
+        <ContentPage  Title="GM"  BackgroundColor="PowderBlue">
+            <StackLayout TranslationY="50">
+                <Label Text="Département Génie Mécanique" TextColor="Aqua" FontSize="18" HorizontalOptions="Center"></Label>
+                <Label Text="Présentation" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" />
+                <Label Text="  Le Département de Génie Mécanique forme des cadres destinés à entretenir, développer et créer les industries mécaniques.
+                        Les techniciens supérieurs formés dans ce département doivent pouvoir,participer tant du point de vue conception et études que fabrication et contrôle du produit, 
+                        à l'édification des industries mécaniques dans notre pays."></Label>
+            </StackLayout>
+
+        </ContentPage>
+
+        <ContentPage Title="GE"  BackgroundColor="Yellow" >
+            <StackLayout TranslationY="50">
+                <Label Text="Département Génie Électrique" TextColor="ForestGreen" FontSize="18" HorizontalOptions="Center"></Label>
+                <Label Text="Présentation" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" />
+                <Label Text="Le département de Génie Electrique assure une formation d'ingénieurs pluridisciplinaires dans le domaine des systèmes électriques, 
+                        permettant de s'insérer activement dans tous les secteurs du génie électrique : 
+                        la conversion d'énergie, les systèmes embarqués, les télécommunications, l'automatisme industriel,"></Label>
+            </StackLayout>
+        </ContentPage>
+        
+        <ContentPage Title="EG"  BackgroundColor="LightGray">
+            <StackLayout TranslationY="50">
+                <Label Text="Département Sciences Economiques Et Gestion" TextColor="Yellow" FontSize="18" FontAttributes="Bold"> </Label>
+                <Label Text="Présentation" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18" />
+                <Editor Text="Les profils de formation spécialisés et pointus concernent des domaines variés allant 
+                        des techniques comptables et financières aux techniques de vente 
+                        et de communication publicitaire en passant par la logistique et le transport international."></Editor>
+            </StackLayout>
+
+        </ContentPage>
+
+        <ContentPage Title="GC"  BackgroundColor="GreenYellow" >
+            <StackLayout TranslationY="50">
+                <Label Text="Département Génie Civil" TextColor="Red" FontSize="18" FontAttributes="Bold"></Label>
+                <Label Text="Présentation" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18" />
+                <Editor Text="Le Département de Génie Civil a démarré en Septembre 1996.
+                        Il regroupe des enseignants et des équipements de spécialité, 
+                        totalement à la disposition des étudiants préparant une L.A.GC (Licence Appliquée en Génie Civil). "></Editor>
+            </StackLayout>
+
+        </ContentPage>
+        
+        
+    </TabbedPage.Children>
+  
+</TabbedPage>

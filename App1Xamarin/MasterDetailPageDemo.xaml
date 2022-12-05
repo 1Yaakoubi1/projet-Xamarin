@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1Xamarin.MasterDetailPageDemo"
+                  >
+    
+    
+
+    <MasterDetailPage.Master>
+        <ContentPage Padding="10" BackgroundColor="Gray"  Title="Master" >
+            <ContentPage.Content>
+                
+                <StackLayout  >
+                    <Label Text="Master page" />
+                    <Button Text="Vêtements" BackgroundColor="Azure" x:Name="Vetements" Clicked="Vetements_Clicked" ></Button>
+                    <Button Text="Accessoires"  BackgroundColor="Azure" x:Name="Accessoires" Clicked="Accessoires_Clicked" ></Button>
+                    <Button Text="Electroménager"  BackgroundColor="Azure" x:Name="Electroménager" Clicked="Electroménager_Clicked"></Button>
+                </StackLayout>
+                
+            </ContentPage.Content>
+
+        </ContentPage>
+        
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage Title="Detail"  <Image Source="j8.jpg"></Image> 
+            <Label Text="Detail page" TextColor="red" VerticalTextAlignment="Center"/>
+        </ContentPage>
+        
+    </MasterDetailPage.Detail>
+        
+    
+</MasterDetailPage>

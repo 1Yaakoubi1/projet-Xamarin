@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1Xamarin.FlyoutPage1"
+             xmlns:pages="clr-namespace:App1Xamarin">
+    
+  <FlyoutPage.Flyout>
+        <pages:FlyoutPage1Flyout x:Name="FlyoutPage">
+            
+           
+        </pages:FlyoutPage1Flyout>
+  </FlyoutPage.Flyout>
+    
+    
+    
+  <FlyoutPage.Detail>
+    <NavigationPage>
+      <x:Arguments>
+                <pages:FlyoutPage1Detail >
+                    <Label Text="Hello" x:Name="Lbl"></Label>
+
+                    <StackLayout >
+
+                        <Button Text="Push" Clicked="BtnPush" x:Name="btnPush" ></Button>
+                        <Button Text="Pop" Clicked="BtnPop"></Button>
+                        <Button Text="PushModal" Clicked="BtnPushModal"></Button>
+                        <Button Text="PopModal" Clicked="BtnPopModal"></Button>
+                        
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="Vêtements"></Label>
+                        <Label Text="Accessoires"></Label>
+                        <Label Text="Electroménager"></Label>
+                    </StackLayout>
+                    
+                </pages:FlyoutPage1Detail>
+      </x:Arguments>
+    </NavigationPage>
+  </FlyoutPage.Detail>
+    
+    
+</FlyoutPage>

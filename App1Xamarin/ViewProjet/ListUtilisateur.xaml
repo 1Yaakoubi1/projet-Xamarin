@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1Xamarin.ViewProjet.ListUtilisateur">
+    <ContentPage.Content>
+        
+    <StackLayout>
+            <ListView x:Name="listUtilisateurs">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding nom}" FontAttributes="Bold"></Label>
+                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding email}"></Label>
+                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding mdp}"></Label>
+                                <Button Grid.Row="0" Grid.Column="2" Text="Supprimer" Grid.RowSpan="2"
+                                        x:Name="btnSupprimer" Clicked="supprimer_Clicked" CommandParameter="{Binding .}"/>
+                            </Grid>
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+            <Button x:Name="btnAjout" Text="Nouveau" VerticalOptions="EndAndExpand" Clicked="btnAjout_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1Xamarin.ViewProjet.AjoutUtilisateur">
+    <ContentPage.Content>
+        <StackLayout  BackgroundColor="AliceBlue"  Padding="15" Orientation="Vertical" >
+            <Label Text="Créez votre compte" TextColor="DarkSalmon"  FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center" /> 
+                
+                <StackLayout  Orientation="Horizontal" >
+
+                <!--<Label Text="Nom d'utilisateur"  />--> 
+                <Entry x:Name="txtName" HorizontalOptions="FillAndExpand" Placeholder="Nom d'utilisateur"   ></Entry>
+            </StackLayout>
+
+            <StackLayout  Orientation="Horizontal"  >
+                <Entry x:Name="txtEmail" HorizontalOptions="FillAndExpand" Placeholder="Email"   ></Entry>
+            </StackLayout>
+            
+            <StackLayout  Orientation="Horizontal" >
+                <!--<Label Text="Mot de passe"/>-->
+                <Entry x:Name="txtMdp" IsPassword="True" HorizontalOptions="FillAndExpand" Placeholder="Mot de passe"  ></Entry>
+            </StackLayout>
+
+            <StackLayout  Orientation="Horizontal" >
+                <Entry x:Name="txtConfirmMdp" IsPassword="True" HorizontalOptions="FillAndExpand" Placeholder=" Confirmer le mot de passe"  ></Entry>
+            </StackLayout>
+
+            <Button x:Name="Enregister"  Text="CRÉER MON COMPTE" Clicked="Enregister_Clicked"
+                    TextColor="White" BackgroundColor="Aquamarine" BorderWidth="1" CornerRadius="50" BorderColor="Aquamarine" Font="Bold"></Button>
+
+             
+            <StackLayout  Orientation="Horizontal" >
+                <Label Text="Vous avez déjà un compte ?"/>
+                <Label  x:Name="LabConnect"  Text="Se connecter" TextDecorations="Underline" TextColor="Gray" />
+                
+
+            </StackLayout>
+
+            <Button x:Name="ListUser" Text="List Utilisateurs" Clicked="ListUser_Clicked" FontSize="Micro"></Button>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
